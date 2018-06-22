@@ -126,7 +126,7 @@ data Synset
     deriving (Show, Eq, Ord)
 
 data SynsetWord
-    = SynsetWord !BS.ByteString !Word16
+    = SynsetWord { ssWord :: !BS.ByteString, ssLexId :: !Word16 }
     deriving (Show, Eq, Ord)
 
 data Pointer
