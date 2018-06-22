@@ -1,0 +1,25 @@
+name:                wordnet-parse
+version:             0.1.0.0
+synopsis:            A parser of WordNet databases
+-- description:         
+homepage:            http://github.com/bgamari/wordnet-parse
+license:             BSD3
+license-file:        LICENSE
+author:              Ben Gamari
+maintainer:          ben@smart-cactus.org
+copyright:           (c) 2018 Ben Gamari
+category:            Language
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+library
+  exposed-modules:     NLP.WordNet
+  other-extensions:    OverloadedStrings
+  build-depends:       base >=4.10 && <4.11,
+                       attoparsec >=0.13 && <0.14,
+                       containers >=0.5 && <0.6,
+                       bytestring >=0.10 && <0.11,
+                       filepath >=1.4 && <1.5
+  hs-source-dirs:      src
+  default-language:    Haskell2010
