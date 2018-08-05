@@ -16,9 +16,9 @@ cabal-version:       >=1.10
 library
   exposed-modules:     NLP.WordNet
   other-extensions:    OverloadedStrings
-  build-depends:       base >=4.10 && <4.11,
+  build-depends:       base >=4.10 && <4.13,
                        attoparsec >=0.13 && <0.14,
-                       containers >=0.5 && <0.6,
+                       containers >=0.5 && <0.7,
                        bytestring >=0.10 && <0.11,
                        filepath >=1.4 && <1.5
   hs-source-dirs:      src
